@@ -152,19 +152,160 @@
                 </table>
               </div>
               <div class="tab-pane fade" id="pills-plan" role="tabpanel" aria-labelledby="pills-plan-tab" tabindex="0">
-                <form action="">
+                <form>
                   <!-- 職旅計畫概況 -->
-                  <div class="d-flex">
+                  <div class="d-flex gap-4 border-bottom pb-5 mb-5">
                     <!-- 左側類別名稱 -->
-                    <div class="flex-shrink-0 side-width gap-4">
+                    <div class="flex-shrink-0 side-width">
                       <h2 class="fs-4 mb-3">職旅計劃概況</h2>
                       <p class="text-secondary">欄位皆為<span class="badge rounded-pill text-bg-danger ms-1">必填</span></p>
                     </div>
-                    <!-- 右側類鼻別名稱 -->
-                    <div></div>
+                    <!-- 右側類別名稱 -->
+                    <div class="mb-4">
+                      <p class="mb-2">目前職業狀態</p>
+                      <div class="py-2">
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="jobStatus" id="job-fulltime" value="fulltime" checked>
+                          <label class="form-check-label" for="job-fulltime">全職上班族</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="jobStatus" id="job-parttime" value="parttime">
+                          <label class="form-check-label" for="job-parttime">兼職工作者</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="jobStatus" id="freelancers" value="freelancers">
+                          <label class="form-check-label" for="freelancers">自由工作者/接案者</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="jobStatus" id="digital-nomad" value="digital-nomad">
+                          <label class="form-check-label" for="digital-nomad">數位遊牧者</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="jobStatus" id="entrepreneur-businessowner" value="entrepreneur-businessowner">
+                          <label class="form-check-label" for="entrepreneur-businessowner">創業者/企業主</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="jobStatus" id="unemployed" value="unemployed">
+                          <label class="form-check-label" for="unemployed">待業中</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="jobStatus" id="job-other" value="job-other">
+                          <label class="form-check-label" for="job-other">其他</label>
+                        </div>
+                      </div>
+                        <!-- 工作產業 -->
+                      <div>
+                        <div class="dropdown">
+                        <button class="form-select text-start py-3 mb-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          工作產業
+                        </button>
+                        <ul class="dropdown-menu w-100 mt-2" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">科技</a></li>
+                          <li><a class="dropdown-item" href="#">媒體</a></li>
+                          <li><a class="dropdown-item" href="#">金融</a></li>
+                          <li><a class="dropdown-item" href="#">醫療健康</a></li>
+                          <li><a class="dropdown-item" href="#">零售製造</a></li>
+                          <li><a class="dropdown-item" href="#">服務業</a></li>
+                          <li><a class="dropdown-item" href="#">藝術創意</a></li>
+                          <li><a class="dropdown-item" href="#">非營利組織</a></li>
+                        </ul>
+                        </div>
+                      </div>
+                      <!-- 工作年資 -->
+                      <div>
+                        <div class="dropdown">
+                        <button class="form-select text-start py-3 mb-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          工作年資
+                        </button>
+                        <ul class="dropdown-menu w-100 mt-2" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">1 年以下</a></li>
+                          <li><a class="dropdown-item" href="#">1-3 年</a></li>
+                          <li><a class="dropdown-item" href="#">3-5 年</a></li>
+                          <li><a class="dropdown-item" href="#">5-10 年</a></li>
+                          <li><a class="dropdown-item" href="#">10 年以上</a></li>
+                        </ul>
+                        </div>
+                      </div>
+                     <!-- 月收入區間 -->
+                      <div class="mb-4">
+                      <p class="mb-2">月收入區間</p>
+                      <div class="py-2">
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="incomeRange" id="underNT$30,000" value="underNT$30,000" checked>
+                          <label class="form-check-label" for="underNT$30,000">3 萬以下</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="incomeRange" id="betweenNT30,000AndNT50,000" value="betweenNT30,000AndNT50,000">
+                          <label class="form-check-label" for="betweenNT30,000AndNT50,000">3-5 萬</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="incomeRange" id="betweenNT50,000AndNT80,000" value="betweenNT50,000AndNT80,000">
+                          <label class="form-check-label" for="betweenNT50,000AndNT80,000">5-8 萬</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="incomeRange" id="betweenNT80,000AndNT120,000" value="betweenNT80,000AndNT120,000">
+                          <label class="form-check-label" for="betweenNT80,000AndNT120,000">8-12 萬</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="incomeRange" id="betweenNT120,000AndNT200,000" value="betweenNT120,000AndNT200,000">
+                          <label class="form-check-label" for="betweenNT120,000AndNT200,000">12-20 萬</label>
+                        </div>
+                        <div class="form-check form-check-inline me-4 mb-2">
+                          <input class="form-check-input" type="radio" name="incomeRange" id="overNT$200,000" value="overNT$200,000">
+                          <label class="form-check-label" for="overNT$200,000">20 萬以上</label>
+                        </div>
+                      </div>
+                      </div>
+                        <!-- 職業摘要 -->
+                      <div class="mb-4">
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）" id="job-desc" style="height: 160px" maxlength="300"></textarea>
+                          <label for="job-desc">職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）</label>
+                        </div>
+                      </div>
+                      <!-- 作品案例展示 -->
+                      <div class="mb-4">
+                      <div class="form-floating">
+                        <input type="text" class="form-control" id="works" placeholder="作品案例展示">
+                        <label for="works">作品案例展示</label>
+                      </div>
+                      </div>
+                      <!-- 附件檔案 -->
+                      <div class="">
+                        <p class="mb-2">附件檔案</p>
+                        <label for="fileUpload" class="btn border"><span class="material-symbols-outlined align-bottom">
+                        upload
+                        </span>上傳檔案</label>
+                        <input type="file" name="fileUpload" id="fileUpload" class="d-none">
+                      </div>
+                      </div>
                   </div>
+                  <!-- 職涯規劃 -->
+                  <div class="d-flex gap-4 border-bottom pb-5 mb-5">
+                    <!-- 左側 -->
+                    <div class="flex-shrink-0 side-width">
+                      <h3 class="fs-4 mb-3">職涯規劃</h3>
+                      <p class="text-secondary">欄位皆為<span class="badge rounded-pill text-bg-danger ms-1">必填</span></p>
+                    </div>
+                    <!-- 右側 -->
+                    <div>
+                      <!-- 短期職涯目標 -->
+                      <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                        <label for="floatingTextarea">Comments</label>
+                      </div>
+                      <div class="mb-4">
+                      <!-- 中長期職涯目標 -->
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="1-3 年中長期職涯願景（最多 300 字）" id="Mid-to-long-termCareer-goals" style="height: 160px" maxlength="300"></textarea>
+                          <label for="Mid-to-long-termCareer-goals">1-3 年中長期職涯願景（最多 300 字））</label>
+                        </div>
+                      </div>  
+                    </div>
+                    </div>
+                    
+                  </div>                  
                 </form>
-              </div>
             </div>
           </div>
         </div>
